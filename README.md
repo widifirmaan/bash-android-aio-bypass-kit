@@ -7,8 +7,6 @@
 
 **Koleksi lengkap tools Android untuk bypass FRP, EDL, dan utilities lainnya**
 
-[Features](#-fitur-utama) • [Device Support](#-daftar-device-yang-didukung) • [Installation](#-instalasi) • [Usage](#-cara-penggunaan) • [Folder Structure](#-struktur-folder)
-
 </div>
 
 ---
