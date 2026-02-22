@@ -1,297 +1,140 @@
 # 🔐 Bash Android AIO Bypass Kit
 
-<div align="center">
+**Bash Android AIO Bypass Kit** is a state-of-the-art, comprehensive collection of Android tools and utilities. Designed for professionals and enthusiasts, it provides everything needed for **FRP bypass**, **EDL mode operations**, and **firmware management** across 100+ Android models.
 
-[![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-1.0-blue)]()
-
-**Koleksi lengkap tools Android untuk bypass FRP, EDL, dan utilities lainnya**
-
-</div>
+![Status](https://img.shields.io/badge/Status-Stable-success?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Android-brightgreen?style=for-the-badge&logo=android)
+![Language](https://img.shields.io/badge/Language-Bash/Batch-blue?style=for-the-badge&logo=gnubash)
+![License](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)
 
 ---
 
-## 📝 Deskripsi
+## 📸 Toolkit Showcase
 
-**Bash Android AIO Bypass Kit** adalah koleksi komprehensif tools dan utilities untuk Android yang mencakup:
-- **FRP Bypass** - Bypass Factory Reset Protection
-- **EDL Tools** - Emergency Download mode utilities
-- **Device Firmware** - File firmware untuk berbagai manufacturer
-- **Flashing Tools** - Tools untuk flash ROM dan file lainnya
+Explore the comprehensive resources and guides included in the kit.
 
-Toolkit ini mendukung berbagai device dari manufacturer ternama seperti Oppo, Vivo, Xiaomi, Meizu, MTK dan lainnya.
-
-> ⚠️ **PERHATIAN**: Toolkit ini hanya untuk tujuan edukasi dan pemulihan device pribadi. Pengguna bertanggung jawab atas penggunaan tools ini.
+| | |
+|:---:|:---:|
+| ![Testpoint Guide](Guide/Testpoint%20Vivo%20Y91.png)<br>**Hardware Testpoint Guides** | **Coming Soon**<br>Interactive Tool Screenshots |
 
 ---
 
-## ✨ Fitur Utama
+## 🚀 Features Overview
 
-- ✅ **FRP Bypass Tools** - Tools untuk bypass Factory Reset Protection
-- ✅ **EDL Mode Support** - Tools untuk emergency download mode
-- ✅ **Multi-Device Support** - Support untuk 100+ model device Android
-- ✅ **Comprehensive Firmware** - Koleksi firmware dari berbagai manufacturer
-- ✅ **Flash Tools** - MTK Flashtool, Qualcomm tools, dan utilities lainnya
-- ✅ **Easy Commands** - Script batch yang mudah digunakan
-- ✅ **Documentation** - Panduan lengkap untuk setiap device
+### 🔓 Bypass & Recovery
+*   **FRP Bypass**: Efficient tools to bypass Factory Reset Protection on major brands including Oppo, Vivo, and Xiaomi.
+*   **EDL Mode Support**: Specialized utilities for Emergency Download mode, allowing deep system access on Qualcomm devices.
+*   **Auth Bypass**: Pre-configured authentication files for Meizu and MediaTek (MTK) secure boot bypass.
 
----
+### 💾 Firmware & Flashing Hub
+*   **Broad Device Support**: Dedicated firmware and flash files for **Oppo (40+)**, **Vivo (20+)**, and **Xiaomi (50+)** models.
+*   **MediaTek Ecosystem**: Complete scatter files and authentication data for MTK-based devices.
+*   **Flashing Suite**: Integrated MTK Flashtool and Qualcomm-specific flashing utilities.
 
-## 📱 Daftar Device yang Didukung
-
-### Manufacturer Utama:
-
-| Brand | Jumlah Device | Folder |
-|-------|--------------|--------|
-| **Oppo** | 40+ | `/Oppo/` |
-| **Vivo** | 20+ | `/Vivo/` |
-| **Xiaomi** | 50+ | `/Xiaomi/` |
-| **Meizu** | - | `/Meizu/` |
-| **MTK Devices** | - | `/MTK/` |
-| **Qualcomm** | - | `/ADB Fastboot eMMCDL/Qcom/` |
-| **LG** | - | `/LG/` |
-
-### Contoh Device:
-- Oppo: A31C, A31T, A33F, A37, A51F, A71 2018, F1, F1Plus_R9
-- Vivo: x20, x20plus, X5Pro, Y35, Y53, Y55S, Y65, Y71
-- Xiaomi: Mi 4c, Mi 4i, Mi 5, Mi Note, Redmi series
+### 🛠️ Developer Power Tools
+*   **One-Click Scripts**: Easy-to-use batch and bash scripts for device status checking and mode switching.
+*   **Custom Recovery**: Ready-to-flash TWRP images for various models.
+*   **Full ADB/Fastboot Suite**: Latest platform tools included for seamless device communication.
 
 ---
 
-## 🛠️ Persyaratan
+## 🛠️ Tech Stack
 
-### Windows:
-- Windows 7/8/10/11
-- ADB (Android Debug Bridge)
-- Fastboot
-- MTK Flashtool (jika diperlukan)
-
-### Linux/Mac:
-- ADB
-- Fastboot
-- Bash shell
-
-### Hardware:
-- USB Cable (preferably original)
-- PC/Laptop
-- Device yang ingin di-flash/bypass
+### Core Technologies
+*   **Scripting Engine**: Bash Shell (Linux/macOS) & Batch Scripts (Windows).
+*   **Communication**: Android Debug Bridge (ADB), Fastboot Protocol.
+*   **Flash Engines**: eMMCDL for Qualcomm, MTK Flashtool for MediaTek.
+*   **Manufacturer Support**: Oppo, Vivo, Xiaomi, Meizu, LG, and Generic MTK/Qcom.
 
 ---
 
-## 📥 Instalasi
+## 📂 Project Structure
 
-### 1. Clone Repository
+```bash
+/
+├── ADB Fastboot eMMCDL/       # Core utilities for ADB, Fastboot, and EDL
+│   ├── android/               # Platform-specific binaries
+│   ├── Qcom/                  # Qualcomm-specific flashing tools
+│   ├── MTK/                   # MediaTek-specific tools
+│   └── cekstatus              # Device status check script
+├── Guide/                     # Documentation & Hardware Testpoints
+├── Oppo/ Vivo/ Xiaomi/        # Brand-specific firmware and bypass files
+├── MTK/                       # MediaTek specialized scripts and scatter files
+├── Meizu/                     # Meizu authentication and init files
+└── Twrp/                      # Custom recovery repository
+```
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+*   **Windows 10/11** (Recommended for GUI-based Flashing Tools).
+*   **Linux/macOS** (For command-line scripts and ADB/Fastboot).
+*   **USB Drivers**: Appropriate manufacturer drivers (MTK, Qualcomm, VCOM).
+
+### 1. Installation
 ```bash
 git clone https://github.com/widifirmaan/bash-android-aio-bypass-kit.git
 cd bash-android-aio-bypass-kit
 ```
 
-### 2. Persiapan Device
-- Aktifkan **Developer Mode** (tap 7x pada Build Number di Settings)
-- Aktifkan **USB Debugging**
-- Hubungkan device ke PC via USB
+### 2. Device Setup
+1. Enable **Developer Options** (Tap 'Build Number' 7 times).
+2. Enable **USB Debugging**.
+3. Connect your device via a high-quality USB cable.
 
-### 3. Install ADB & Fastboot
-**Windows:**
-```bash
-# Install via command atau download dari Android SDK Platform Tools
-# https://developer.android.com/studio/releases/platform-tools
-```
-
-**Linux/Mac:**
-```bash
-# Ubuntu/Debian
-sudo apt-get install adb fastboot
-
-# macOS
-brew install android-platform-tools
-```
-
----
-
-## 🚀 Cara Penggunaan
-
-### Pengecekan Status Device
+### 3. Usage Example
+To check if your device is properly recognized:
 ```bash
 cd "ADB Fastboot eMMCDL"
 ./cekstatus
 ```
 
-### Mode EDL
-```bash
-# Untuk Qualcomm devices
-cd "ADB Fastboot eMMCDL/Qcom"
-# Jalankan tools yang sesuai
-
-# Untuk MTK devices
-cd MTK/Flashtool
-# Gunakan MTK Flashtool
-```
-
-### FRP Bypass
-1. Buka folder device yang ingin di-bypass (misalnya `/Oppo/A31C/`)
-2. Ikuti panduan di folder `/Guide/`
-3. Jalankan command yang sesuai
-
-### Flashing ROM
-```bash
-adb devices           # Cek device terdeteksi
-adb reboot bootloader # Reboot ke bootloader
-fastboot flash boot boot.img
-fastboot flash system system.img
-```
-
----
-
-## 📁 Struktur Folder
-
-```
-bash-android-aio-bypass-kit/
-│
-├── README.md                          # File ini
-├── ADB Fastboot eMMCDL/               # Tools untuk ADB, Fastboot, EDL
-│   ├── cekstatus                      # Script pengecekan status device
-│   ├── edl.cmd / edl - Copy.cmd       # EDL mode command
-│   ├── android/                       # Android utilities
-│   ├── Qcom/                          # Qualcomm-specific tools
-│   ├── MTK/                           # MTK-specific tools
-│   ├── SPD/                           # Spreadtrum tools
-│   └── exynos/                        # Exynos tools
-│
-├── Guide/                             # Dokumentasi & panduan
-│   └── EDL Command.txt                # Panduan EDL commands
-│
-├── LG/                                # LG device firmware & files
-│   └── V30 Thin Q/
-│
-├── Meizu/                             # Meizu device files
-│   ├── auth files                     # Authentication files
-│   └── mz_init/
-│
-├── MTK/                               # MediaTek devices
-│   ├── auth files                     # MTK authentication
-│   ├── scatter files                  # MTK scatter files
-│   └── Flashtool/                     # MTK Flashtool
-│
-├── Oppo/                              # Oppo devices (40+ models)
-│   └── [Model folders]
-│
-├── Twrp/                              # TWRP recovery files
-│
-├── Vivo/                              # Vivo devices (20+ models)
-│   └── [Model folders]
-│
-└── Xiaomi/                            # Xiaomi devices (50+ models)
-    ├── [Model folders]
-    └── Redmi series
-```
-
----
-
-## ⚙️ Tools yang Disertakan
-
-| Tool | Fungsi | Platform |
-|------|--------|----------|
-| **ADB** | Android Debug Bridge - komunikasi device | Windows/Linux/Mac |
-| **Fastboot** | Flash mode commands | Windows/Linux/Mac |
-| **EDL Tool** | Emergency Download mode | Qualcomm |
-| **MTK Flashtool** | Untuk flash MTK devices | Windows |
-| **Batch Scripts** | Automation commands | Windows |
-
----
-
-## 📖 Panduan Khusus per Device
-
-### Oppo Devices
-1. Masuk folder `/Oppo/[Model]/`
-2. Ikuti panduan yang ada di folder
-3. Gunakan EDL atau Fastboot sesuai instruksi
-
-### Xiaomi Devices
-1. Aktifkan MI Account dan Developer Mode
-2. Gunakan MiFlash atau fastboot commands
-3. Lihat folder `/Xiaomi/[Model]/`
-
-### Vivo Devices
-1. Bypass FRP menggunakan tools di `/Vivo/[Model]/`
-2. Gunakan Vivo Flash Tool jika diperlukan
-
-### MTK Devices
-1. Gunakan MTK Flashtool dari `/MTK/Flashtool/`
-2. Load scatter file (.txt) dari `/MTK/`
-3. Select ROM files dan flash
-
----
-
-## ⚠️ Peringatan & Disclaimer
-
-- **⚠️ Backup data Anda sebelum melakukan proses**
-- Tools ini HANYA untuk device pribadi Anda
-- Penggunaan tidak sah adalah **ILEGAL**
-- Penulis TIDAK bertanggung jawab atas:
-  - Data loss
-  - Device damage
-  - Banned account
-  - Penggunaan ilegal
-- **Gunakan dengan risiko sendiri**
-
 ---
 
 ## 🔧 Troubleshooting
 
-### Device tidak terdeteksi ADB
+### Device Not Detected
 ```bash
-# Windows
+# Force restart ADB server
 adb kill-server
 adb start-server
 adb devices
-
-# Linux/Mac
-sudo adb kill-server
-sudo adb devices
 ```
+*Tip: Ensure you are using the original USB cable and a stable USB port.*
 
-### Device stuck di bootloader
-- Hubungkan kembali ke PC
-- Gunakan EDL mode recovery
-- Flash stock ROM
-
-### Fastboot connection error
-- Install USB driver yang sesuai
-- Gunakan cable original
-- Coba port USB yang berbeda
+### Connection Errors
+*   **Fastboot Error**: Re-install the correct Android USB drivers.
+*   **EDL Mode**: Ensure the device is powered off and the correct hardware testpoint is used.
+*   **Flashtool Fail**: Check the scatter/DA file compatibility with your specific chipset.
 
 ---
 
-## 📚 Resource Tambahan
+## 📚 Resources & Community
 
-- [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools)
-- [ADB Documentation](https://developer.android.com/tools/adb)
-- [Fastboot Guide](https://android.googlesource.com/platform/system/core/+/master/fastboot/)
-- [XDA Developers](https://xda-developers.com)
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi dirangkul! Jika Anda ingin menambah:
-- Device firmware baru
-- Tools tambahan
-- Dokumentasi lebih lengkap
-
-Silakan buat Pull Request atau Issue.
+*   [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools)
+*   [ADB Official Documentation](https://developer.android.com/tools/adb)
+*   [XDA Developers Community](https://xda-developers.com)
 
 ---
 
-## 👨‍💻 Author
+## ⚠️ Disclaimer
 
-**Bash Android AIO Bypass Kit** - Created untuk komunitas Android
+> [!WARNING]
+> This toolkit is for **educational purposes and personal recovery** only. Use of these tools for unauthorized access to devices you do not own is **illegal**. The author takes no responsibility for data loss, bricked devices, or legal consequences. **Use at your own risk.**
+
+---
+
+## 👥 Authors
+
+Developed and maintained by **Widi Firmaan** and the Android Open Source Community.
 
 ---
 
 <div align="center">
 
-**⭐ Jika tools ini membantu Anda, berikan star!** ⭐
+**⭐ If this toolkit helped you, please give it a star! ⭐**
 
 *Last Updated: February 2026*
 
